@@ -4,35 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website 1 Code</title>
+    <title>Website 1 Code for Home Page</title>
 <style>
-    div{
+    .welcome{
+        font-size:80px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 300;
+        margin-top: -20px;
+        text-align: center;
+
+    }
+
+    .exampletext{
+        font-family: Times;
+        font-size: 50px;
+        font-weight: 400;
+    }
+
+
+    .img-container{
+        background-image:url(images/jason-ham.jpg);
+        /* WHYYYYY is my background-image not showing up??? */
+        /* filter: blur(2px); */
+        height: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    
+    }
+    .inner-container{
+        text-align: center;
+        height: auto;
+        width: 100%;
+        color: black;
+        position: absolute;
+        margin-top: 200px;
+    }
+
+
+    
+    .home-button{
+        margin-top: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 60px;
+        text-align: center;
+        font-weight: 300;
+        display: inline-block;
+        outline: none;
+        transition: background-color 0.2s ease-out, color 0.2s ease-out;
+        color: black;
+        border: 1px solid black;
+        border-radius: 10%;
+        padding: 20px;
+        text-decoration: none;
+
+    }
+    .home-button:hover{
+        color:forestgreen;
+        border: 1px solid forestgreen;
+    }
+    .headerbuttons{
         background-color: bisque;
         padding: 30px;
         display:flex; 
         flex-direction: row;
         justify-content: space-between;
         min-width: auto;
-        max-width: auto;
+        max-width:auto;
         /* make the size of bkgrnd end sooner on page, need to make box? */
     }
     .h{
-
     font-size:60px;
     align-items: center;
     }
     .d{
-
     font-size:60px;
     align-items: center;
     }
     .a{
-   
+
     font-size: 60px;
     align-items: center;
     }
     .c{
-   
     font-size: 60px;
     align-items: center;
     }
@@ -75,16 +130,30 @@
     h2{
         text-align: center;
     }
+
 </style>
 </head>
-<body>
 <h1> Andie's Website. Remember, will take 5-6 hours, and is due Friday. Do 1hr each day, 5 sessions on lifeat.io  </h1> 
 <h2> Follow the layout of the images I created to begin coding my website. Don't start finding places yet/research, do that tomorrow after I have the skeleton ready!! you've got this :). </h2>
-<div>
+<div class="headerbuttons">
 <div class="h"><a href="#" class="home">Home</a></div>
 <div class="d"><a href="#" class="discover">Discover</a></div>
 <div class="a"><a href="#" class="about">About</a></div>
 <div class="c"><a href="#" class="contact">Contact</a></div>
 </div>
+<body>
+
+    <div class="img-container">
+        <div class="inner-container">
+         <!-- <img class="australia" src="images/jason-ham-IKlpLl7HVo0-unsplash.jpg" alt="Australia">    -->
+         <h1 class="welcome">Welcome to Unique Travels</h1>
+         <h2 class="exampletext"> THis is example text</h2>
+         <a class="home-button" href="#">Discover </a>
+        </div>
+    </div>
+
+
+    <!-- Photo by <a href="https://unsplash.com/@planett?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Ham</a> on <a href="https://unsplash.com/s/photos/travel-australia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+
 </body>
 </html>
