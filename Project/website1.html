@@ -6,76 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website 1 Code for Home Page</title>
 <style>
+    body{
+        margin-left: 0vh;
+        margin-right: 0vh;
+        margin-bottom: 0vh;
+        margin-top: 0vh;
+    }
     .welcome{
         font-size:80px;
         font-family: 'Times New Roman', Times, serif;
-        font-weight: 300;
-        margin-top: 50px;
+        font-weight: 800;
+        /* margin-top: 50px; */
+        padding-top: 10%;
         text-align: center;
 
     }
-
     .exampletext{
         font-family: Times;
         font-size: 50px;
         font-weight: 400;
     }
-
-
     .hero-image{
         background-image:url("images/jason-ham.jpg");
-        /* why is my background-image not showing up??? */
         /* filter: blur(2px); */
         overflow: hidden; 
-        height: 100%; 
-        /* background-position: center; */
-        /* background-repeat:repeat; */
+        background-position: center;
+        padding-bottom: 50%;
         background-size: cover;
-        /* background-size: ; */
-        position:relative;
-        background-attachment: fixed; 
-
-    
     }
     .inner-container{
         text-align: center;
-        height: auto;
-        width: 100%;
         color: black;
-        /* position: absolute; */
-        /* margin-top: 200px; */
+        margin-top: 200px;
     }
-
-
-    .home-button{
+    .discover-button{
+        cursor: pointer;
+        /* cursor:pointer not working? */
         margin-top: 20px;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 60px;
+        font-size: 50px;
         text-align: center;
-        font-weight: 300;
+        font-weight: 600;
         display: inline-block;
-        outline: none;
-        transition: background-color 0.2s ease-out, color 0.2s ease-out;
+        outline: none; 
         color: black;
         border: 1px solid black;
-        border-radius: 10%;
-        padding: 20px;
+        border-radius: 0%;
+        padding: 30px;
         text-decoration: none;
-
     }
-    .home-button:hover{
-        color:forestgreen;
-        border: 1px solid forestgreen;
+    .discover-button:hover{
+        color:whitesmoke;
+        border: 1px solid whitesmoke;
     }
     .headerbuttons{
-        background-color: bisque;
         padding: 30px;
         display:flex; 
         flex-direction: row;
-        justify-content: space-between;
+        justify-content:space-around;
         min-width: auto;
         max-width:auto;
-        /* make the size of bkgrnd end sooner on page, need to make box? */
+        position: absolute;
+         top: 0;
+        right: 0;
+        bottom: 0;
+         left: 0;
     }
     .h{
     font-size:60px;
@@ -86,7 +81,6 @@
     align-items: center;
     }
     .a{
-
     font-size: 60px;
     align-items: center;
     }
@@ -95,65 +89,66 @@
     align-items: center;
     }
     .home{
-        background-color: pink;
-        color: black;
+        color: #113061;
+        font-weight: 600;
+        font-size: 65px;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .home:hover{
-        background-color: blue;
-        color: orangered;
+        color: whitesmoke;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .discover{
-        background-color: pink;
-        color: black;
+        color: #0f3064;
+        font-weight: 600;
+        font-size: 65px;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .discover:hover{
-        background-color: blue;
-        color: orangered;
+        color: whitesmoke;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .about{
-        background-color: pink;
-        color: black;
+        color: #143367;
+        font-weight: 600;
+        font-size: 65px;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .about:hover{
-        background-color: blue;
-        color: orangered;
+
+        color: whitesmoke;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .contact{
-
-        background-color: pink;
-        color: black;
+        color: #16346a;
+        font-weight: 600;
+        font-size: 65px;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .contact:hover{
-        background-color: blue;
-        color: orangered;
+
+        color: whitesmoke;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
@@ -168,22 +163,20 @@
 
 </style>
 </head>
-<h1> Andie's Website. Remember, will take 5-6 hours, and is due Friday. Do 1hr each day, 5 sessions on lifeat.io  </h1> 
-<h2> Follow the layout of the images I created to begin coding my website. Don't start finding places yet/research, do that tomorrow after I have the skeleton ready!! you've got this :). </h2>
+
 <div class="headerbuttons">
 <div class="h"><a href="#" class="home">Home</a></div>
 <div class="d"><a href="#" class="discover">Discover</a></div>
 <div class="a"><a href="#" class="about">About</a></div>
-<div class="c"><a href="#" class="contact">Contact</a></div>
+<div class="c"><a href="contact.html" class="contact">Contact</a></div>
 </div>
 <body>
-
     <div class="hero-image">
         <div class="inner-container">
          <!-- <img class="australia" src="images/jason-ham-IKlpLl7HVo0-unsplash.jpg" alt="Australia">    -->
          <h1 class="welcome">Welcome to Unique Travels</h1>
-         <h2 class="exampletext"> This is example text</h2>
-         <a class="home-button" href="#">Discover </a>
+         <h2 class="exampletext">Off The Beaten Path</h2>
+         <a class="discover-button" href="discover.html">Discover </a>
     </div>
     </div>
 
