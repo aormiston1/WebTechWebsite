@@ -6,7 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
 </head>
+<style>
+     .headerbuttons{
+        background-color: bisque;
+        padding: 30px;
+        display:flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: ;
+        max-width: ;
+        /* make the size of bkgrnd end sooner on page, need to make box? */
+    }
+    .h{
+    font-size:60px;
+    align-items: center;
+    }
+    .d{
+    font-size:60px;
+    align-items: center;
+    }
+    .a{
+
+    font-size: 60px;
+    align-items: center;
+    }
+    .c{
+    font-size: 60px;
+    align-items: center;
+    }
+    .home{
+        background-color: pink;
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .home:hover{
+        background-color: blue;
+        color: orangered;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .discover{
+        background-color: pink;
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .discover:hover{
+        background-color: blue;
+        color: orangered;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .about{
+        background-color: pink;
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .about:hover{
+        background-color: blue;
+        color: orangered;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .contact{
+
+        background-color: pink;
+        color: black;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .contact:hover{
+        background-color: blue;
+        color: orangered;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+    .bigbox{
+        align-self: center;
+    }
+    legend{
+        text-align:center;
+    }
+    fieldset{
+       
+       height:20%;
+       width:10%;
+    }
+
+    button{
+        text-align: center;
+    }
+    input{
+        text-align: center;
+        margin-right: 40%;
+        margin-left:40%;
+    }
+    .message{
+        block-size: 60px;
+    }
+</style>
 <body>
-    
+
+<div class="headerbuttons">
+    <div class="h"><a href="#" class="home">Home</a></div>
+    <div class="d"><a href="#" class="discover">Discover</a></div>
+    <div class="a"><a href="#" class="about">About</a></div>
+    <div class="c"><a href="#" class="contact">Contact</a></div>
+</div>
+
+
+<div class="bigbox">
+<fieldset>
+    <legend>Contact Me!</legend>
+    <div class="container">
+    <form class="contactform" 
+    action="mailto:aormiston1@babson.edu"
+    method="post">
+   
+        <label for="firstname">First Name:</label>
+            <input type="text"class="firstname" name="firstname" placeholder="First Name"/>
+        <label for="lastname">Last Name:</label>
+            <input type="text"class="lastname"name="lastname"placeholder="Last Name"/>
+        <label for="email">Email Address:</label>
+            <input type="text"class="email"name="email"placeholder="Email Address"/>
+        <label for="email">Message:</label>
+            <input type="text"class="message"name="message"placeholder="Message"/>
+        <button class="submit">Submit</button>
+    </form>
+</fieldset>
+</div>
+</div>
 </body>
 </html>

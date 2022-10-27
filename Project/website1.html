@@ -10,7 +10,7 @@
         font-size:80px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 300;
-        margin-top: -20px;
+        margin-top: 50px;
         text-align: center;
 
     }
@@ -22,15 +22,19 @@
     }
 
 
-    .img-container{
+    .hero-image{
         background-image:url("images/jason-ham.jpg");
         /* why is my background-image not showing up??? */
         /* filter: blur(2px); */
-        height: 80%;
-        background-position: center;
-        background-repeat: no-repeat;
+        overflow: hidden; 
+        height: 100%; 
+        /* background-position: center; */
+        /* background-repeat:repeat; */
         background-size: cover;
-        position: relative;
+        /* background-size: ; */
+        position:relative;
+        background-attachment: fixed; 
+
     
     }
     .inner-container{
@@ -38,12 +42,11 @@
         height: auto;
         width: 100%;
         color: black;
-        position: absolute;
-        margin-top: 200px;
+        /* position: absolute; */
+        /* margin-top: 200px; */
     }
 
 
-    
     .home-button{
         margin-top: 20px;
         font-family: 'Times New Roman', Times, serif;
@@ -99,9 +102,25 @@
         border-radius: 10px;
         cursor: pointer;
     }
+    .home:hover{
+        background-color: blue;
+        color: orangered;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
     .discover{
         background-color: pink;
         color: black;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .discover:hover{
+        background-color: blue;
+        color: orangered;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
@@ -115,10 +134,26 @@
         border-radius: 10px;
         cursor: pointer;
     }
+    .about:hover{
+        background-color: blue;
+        color: orangered;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
     .contact{
 
         background-color: pink;
         color: black;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .contact:hover{
+        background-color: blue;
+        color: orangered;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
@@ -143,13 +178,13 @@
 </div>
 <body>
 
-    <div class="img-container">
+    <div class="hero-image">
         <div class="inner-container">
          <!-- <img class="australia" src="images/jason-ham-IKlpLl7HVo0-unsplash.jpg" alt="Australia">    -->
          <h1 class="welcome">Welcome to Unique Travels</h1>
-         <h2 class="exampletext"> THis is example text</h2>
+         <h2 class="exampletext"> This is example text</h2>
          <a class="home-button" href="#">Discover </a>
-        </div>
+    </div>
     </div>
 
 
