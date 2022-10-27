@@ -7,15 +7,19 @@
     <title>Contact Page</title>
 </head>
 <style>
-     .headerbuttons{
-        background-color: bisque;
+  .headerbuttons{
         padding: 30px;
         display:flex; 
         flex-direction: row;
-        justify-content: space-between;
-        min-width: ;
-        max-width: ;
-        /* make the size of bkgrnd end sooner on page, need to make box? */
+        justify-content:space-around;
+        min-width: auto;
+        max-width:auto;
+        position: absolute;
+         top: 0;
+        right: 0;
+        bottom: 0;
+         left: 0;
+        /* make header pop up after 2seconds on page */
     }
     .h{
     font-size:60px;
@@ -26,7 +30,6 @@
     align-items: center;
     }
     .a{
-
     font-size: 60px;
     align-items: center;
     }
@@ -35,71 +38,71 @@
     align-items: center;
     }
     .home{
-        background-color: pink;
         color: black;
+        font-weight: 600;
+        font-size: 65px;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .home:hover{
-        background-color: blue;
-        color: orangered;
+        color: whitesmoke;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .discover{
-        background-color: pink;
         color: black;
+        font-weight: 600;
+        font-size: 65px;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .discover:hover{
-        background-color: blue;
-        color: orangered;
+        color: whitesmoke;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .about{
-        background-color: pink;
         color: black;
+        font-weight: 600;
+        font-size: 65px;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .about:hover{
-        background-color: blue;
-        color: orangered;
+
+        color: whitesmoke;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .contact{
-
-        background-color: pink;
         color: black;
+        font-weight: 600;
+        font-size: 65px;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
     .contact:hover{
-        background-color: blue;
-        color: orangered;
+
+        color: whitesmoke;
         text-decoration: none;
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
     }
-
 
     .bigbox{
         align-self: center;
@@ -123,6 +126,9 @@
     }
     .message{
         block-size: 60px;
+    }
+    .container{
+    align-self: center;
     }
 </style>
 <body>
@@ -153,8 +159,9 @@
             <input type="text"class="message"name="message"placeholder="Message"/>
         <button class="submit">Submit</button>
     </form>
+    </div>
 </fieldset>
 </div>
-</div>
+
 </body>
 </html>
