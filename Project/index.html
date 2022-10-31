@@ -4,15 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index.html</title>
-    <style>
-        body{
-font-family: 'Times New Roman', Times, serif;
-font-size: large;
-        }
-    </style>
+    <title>Website 1 Code for Home Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css" >
+<style>
+    body{
+        margin-left: 0vh;
+        margin-right: 0vh;
+        margin-bottom: 0vh;
+        margin-top: 0vh;
+    }
+    .welcome{
+        font-size:80px;
+        font-family: 'Italiana', serif;
+        font-weight: 800;
+        text-align: center;
+        top:444px;
+        position:relative;
+
+    }
+    .exampletext{
+        font-family: 'Italiana', serif;
+        font-size: 50px;
+        font-weight: 400;
+        vertical-align: middle;
+        top:444px;
+        position:relative;
+    }
+    .hero-image{
+        background-image:url("images/jason-ham.jpg");
+        /* filter: blur(2px); */
+        overflow: hidden; 
+        background-position: center;
+        padding-bottom: 50%;
+        background-size: cover;
+    }
+    .inner-container{
+        text-align: center;
+        color: black;
+        margin-top: 200px;
+    }
+    .discover-button{
+        cursor: pointer;
+        margin-top: 20px;
+        font-family: 'Italiana', serif;
+        font-size: 50px;
+        text-align: center;
+        font-weight: 600;
+        top:444px;
+        position:relative;
+        display: inline-block;
+        outline: none; 
+        color: black;
+        border: 1px solid black;
+        border-radius: 0%;
+        padding: 30px;
+        text-decoration: none;
+
+    }
+    .discover-button:hover{
+        color:white;
+        border: 1px solid white;
+        font-family: 'Italiana', serif;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+
+</style>
 </head>
+
+<div class="headerbuttons">
+<div class="h"><a href="index.html" class="home">Home</a></div>
+<div class="d"><a href="discover.html" class="discover">Discover</a></div>
+<div class="a"><a href="about.html" class="about">About</a></div>
+<div class="c"><a href="contact.html" class="contact">Contact</a></div>
+<div class="s"><a href="sitemap.html" class="sitemap">Sitemap</a></div>
+</div>
 <body>
-    This is my index.html to test for the functionality of my page!
+    <div class="hero-image" alt="hero-image" title="Uluru, Australia">
+        <div class="inner-container">
+         <h1 class="welcome">Welcome to Unique Travels</h1>
+         <h2 class="exampletext">Off The Beaten Path</h2>
+         <a class="discover-button" href="discover.html">Discover </a>
+    </div>
+    </div>
+
+
+    <!-- Photo by <a href="https://unsplash.com/@planett?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Ham</a> on <a href="https://unsplash.com/s/photos/travel-australia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+
 </body>
 </html>

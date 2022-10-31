@@ -1,0 +1,118 @@
+.headerbuttons{
+    font-family: 'Italiana', serif;
+    padding: 30px;
+    display:flex; 
+    flex-direction: row;
+    justify-content:space-around;
+    min-width: auto;
+    max-width:auto;
+    position: absolute;
+     top: 0;
+    right: 0;
+    bottom: 0;
+     left: 0;
+    /* make header pop up after 2seconds on page */
+}
+.h{
+font-size:60px;
+align-items: center;
+}
+.d{
+font-size:60px;
+align-items: center;
+}
+.a{
+font-size: 60px;
+align-items: center;
+}
+.c{
+font-size: 60px;
+align-items: center;
+}
+.s{
+font-size: 60px;
+align-items: center;
+}
+.home{
+    color: black;
+    font-weight: 600;
+    font-size: 65px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.home:hover{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.discover{
+    color: black;
+    font-weight: 600;
+    font-size: 65px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.discover:hover{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.about{
+    color: black;
+    font-weight: 600;
+    font-size: 65px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.about:hover{
+
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contact{
+    color: black;
+    font-weight: 600;
+    font-size: 65px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contact:hover{
+
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.sitemap{
+    color: black;
+    font-weight: 600;
+    font-size: 65px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.sitemap:hover{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10x;
+    cursor: pointer;
+}
