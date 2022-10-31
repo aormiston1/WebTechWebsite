@@ -116,3 +116,6 @@ align-items: center;
     border-radius: 10x;
     cursor: pointer;
 }
+body{
+    background-color: #6892bc;
+}
