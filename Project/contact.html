@@ -10,38 +10,67 @@
     <link rel="stylesheet" href="header.css" >
 </head>
 <style>
- form{
-    display:inline-block;
- }
-    legend{
-        text-align:center;
-    }
-    fieldset{
-       
-       height:20%;
-       width:10%;
-    }
+legend{
+    text-align: center;
+}
+fieldset{
+    width:1000px;
+    height: 800px;
+    font-size: 50px;
+}
+.bigbox{
 
-    button{
+    margin-left: 35%;
+    margin-right: 50%; 
+    /* margin: 50%; */
+    font-size: 70px;
+}
+button{
         text-align: center;
+        font-size: 25px;
     }
-    input{
+input{
         text-align: center;
         margin-right: 40%;
-        margin-left:40%;
+        margin-left: 40%;
     }
-    .message{
-        block-size: 60px;
+.message{
+        block-size: 70px;
     }
-    .container{
-    /* align-self: center;
-    text-align: center;
-    top:auto:
-    left: auto;
-    bottom: auto;
-    right: auto; */
+.container{
+    display: block;
+    position:relative; 
 
     }
+form{
+    margin-left: 25%;
+    margin-right:25%;
+    width: 65%;
+
+}
+label{
+text-align: left;
+}
+.firstname{
+    text-align: left;
+    padding-left: 5px;
+    font-size: 35px;
+}
+.lastname{
+    text-align: left;
+    padding-left: 5px;
+    font-size: 35px;
+}
+.email{
+    text-align: left;
+    padding-left: 5px;
+    font-size: 35px;
+}
+.message{
+    text-align: left;
+    padding-left: 5px;
+    font-size: 35px;
+}
 </style>
 <body>
 
@@ -53,22 +82,23 @@
     <div class="s"><a href="sitemap.html" class="sitemap">Sitemap</a></div>
 </div>
 
-
+<br><br><br><br><br><br><br><br><br><br>
 <div class="bigbox">
 <fieldset>
     <legend>Contact Me!</legend>
     <div class="container">
+
     <form class="contactform" 
     action="mailto:aormiston1@babson.edu"
     method="post">
    
-        <label for="firstname">First Name:</label>
+        <label for="firstname"><strong>First Name:</strong></label>
             <input type="text"class="firstname" name="firstname" placeholder="First Name"/>
-        <label for="lastname">Last Name:</label>
+        <label for="lastname"><strong>Last Name:</strong></label>
             <input type="text"class="lastname"name="lastname"placeholder="Last Name"/>
-        <label for="email">Email Address:</label>
+        <label for="email"><strong>Email Address:</strong></label>
             <input type="text"class="email"name="email"placeholder="Email Address"/>
-        <label for="email">Message:</label>
+        <label for="email"><strong>Message:</strong></label>
             <input type="text"class="message"name="message"placeholder="Message"/>
         <button class="submit">Submit</button>
     </form>
