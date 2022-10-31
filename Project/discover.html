@@ -110,8 +110,6 @@
         padding: 15px;
         border-radius: 10px;
         cursor: pointer;
-        
-
     }
     h1{
         text-align: center;
@@ -133,7 +131,7 @@
         color: whitesmoke;
         text-decoration: none;
         padding: 15px;
-        border-radius: 10px;
+        border-radius: 10x;
         cursor: pointer;
     }
     .locations{
@@ -147,7 +145,25 @@
         font-size: 50px;
     }
     img{
-    /* adjust the image size to fit nicely  */
+    /* adjust the image size to fit nicely   */
+    max-width: 900px;
+    max-height: 650px;
+    object-fit:scale-down;
+
+    
+    }
+    .locations{
+        text-align: center;
+    }
+    td{
+        padding: 5%;
+        margin: 5%;
+        font-weight: bold;
+        /* left:auto;
+        right:auto:
+        top: auto;
+        bottom:auto; */
+        
     }
     </style>
 </head>
@@ -167,59 +183,109 @@
 <table>
 <tr>
 <td class="queenstown">
-<img src="images/werner-sevenster-n9_tdhtYg1k-unsplash.jpg" alt="Queenstown" title="Queenstown, NZ">
-Queenstown, NZ
-Located in the Western part of NZ,Queenstown can be described as a home away from home. Known as the best location for adrenaline junkies, there's also so much to offer to the more leisure inclined.
+<div class="container">
+<img src="images/werner-sevenster-n9_tdhtYg1k-unsplash (1).jpg" alt="Queenstown" title="Queenstown, NZ" class="image" >
+<br>
+<div class=overlay>
+<div class="text">Queenstown, NZ <br>
+Located in the Western part of NZ, Queenstown can be described as a home away from home. Known as the best location for adrenaline junkies, there's also so much to offer to the more leisure inclined.</div>
+</div>
+</div>
 </td>
+
+
+
 <td class="verona">
-<img src="images/elisa-amadori-XWLhagkMeB8-unsplash.jpg" alt="Verona" title="Verona, Italy">
-Verona, Italy
-The city of Verona, known for Shakespeare's plays (including Romeo and Juliet and The Two Gentlemen of Verona) is located in north Italy. The 2nd largest city after Venice, Verona is the perfect destination for travels with interests in the history and arts. 
+<div class=container>
+<img src="images/elisa-amadori-XWLhagkMeB8-unsplash (1).jpg" alt="Verona" title="Verona, Italy" class="image">
+<br>
+<div class=overlay> 
+<div class="text">Verona, Italy <br>
+The city of Verona, known for Shakespeare's plays (including Romeo and Juliet and The Two Gentlemen of Verona) is located in north Italy. The 2nd largest city after Venice, Verona is the perfect destination for travels with interests in the history and arts. </div>
+</div>
+</div> 
 </td>
 
 <td class="briancon">
-    <img src="images/fabe-collage-XvCq_KLuNnI-unsplash.jpg" alt="Briançon" title="Briançon Hautes-Alpes, France">
-Briançon Hautes-Alpes, France
-Briançon is arguably one of the best spots for winter sport enthusiasts. It is a perfect location to visit different ski mountains nearby, and can also visit the Vallée de la Clarée, which is a beautiful nature location right next to the border of Italy. </td>
+<div class="container">
+<img src="images/fabe-collage-XvCq_KLuNnI-unsplash (1).jpg" alt="Briançon" title="Briançon Hautes-Alpes, France" class="image">
+<br> 
+<div class="overlay">
+<div class="text">Briançon Hautes-Alpes, France <br>
+Briançon is arguably one of the best spots for winter sport enthusiasts. It is a perfect location to visit different ski mountains nearby, and can also visit the Vallée de la Clarée, which is a beautiful nature location right next to the border of Italy. </div>
+</div>
+</div>
+</td>
 </tr>
+
+
 <tr>
 <td class="bruges">
-    <img src="images/hardie-van-zyl-gUE0yEKewTo-unsplash.jpg" alt="Bruges" title="Bruges, Belgium">
-Bruges, Belgium
-A beautiful city in the Northwest of Belgium, Bruges has much to offer. Bruges is another city with rich history and sightseeing options. A tip, to stay budget-friendly, avoid touristy areas to dine in budget!</td>
+<div class="container">
+<img src="images/hardie-van-zyl-gUE0yEKewTo-unsplash (1).jpg" alt="Bruges" title="Bruges, Belgium" class="image">
+<br>
+<div class=overlay>
+<div class="text">Bruges, Belgium <br>
+A beautiful city in the Northwest of Belgium, Bruges has much to offer. Bruges is another city with rich history and sightseeing options. A tip, to stay budget-friendly, avoid touristy areas to dine in budget!</div>
+</div>
+</div>
+</td>
 
 
 
 <td class="bergen">
-    <img src="images/patrik-kovar-9S-Gmpy9hug-unsplash.jpg" alt="Bergen" title="Bergen, Norway">
-Bergen, Norway
-Bergen is located on Norway's southwestern coast. Named "The heart of the fjords", it offers a more relaxed experience to travellers compared to larger Norweigan cities. A beautiful city with many different activities, just be sure to bring an umbrella!
+<div class="container"><img src="images/patrik-kovar-9S-Gmpy9hug-unsplash (1).jpg" alt="Bergen" title="Bergen, Norway" class="image">
+<br>
+<div class="overlay">
+<div class="text">Bergen, Norway <br>
+Bergen is located on Norway's southwestern coast. Named "The heart of the fjords", it offers a more relaxed experience to travellers compared to larger Norweigan cities. A beautiful city with many different activities, just be sure to bring an umbrella!</div>
+</div>
+</div>
 </td>
 
 <td class="fes">
-    <img src="images/vince-gx-lDIjGidOrQ0-unsplash.jpg" alt="Fes" title="Fes, Morocco">
-Fes, Morocco
-Fes is known for their leather tannery within the city. It is located in the northeast of Morocco. It is significantly less expensive than other Moroccan cities, and has a beautiful historical element. Known as the "Mecca of the West", Fes is a city you don't want to miss.
+<div class="container"> <img src="images/vince-gx-lDIjGidOrQ0-unsplash (1).jpg" alt="Fes" title="Fes, Morocco" class="image">
+<br>
+<div class=overlay>
+<div class="text">Fes, Morocco <br>
+Fes is known for their leather tannery within the city. It is located in the northeast of Morocco. It is significantly less expensive than other Moroccan cities, and has a beautiful historical element. Known as the "Mecca of the West", Fes is a city you don't want to miss.</div>
+</div>
+</div>
 </td>
 </tr>
+
+
 <tr>
 <td class="fairbanks">
-    <img src="images/alain-bonnardeaux-7JU77NljbXQ-unsplash.jpg" alt="Fairbanks" title="Fairbanks, Alaska">
-Fairbanks, Alaska
-Fairbanks an Alaskan city known for many tourist attractions, and a sun that rarely sets during the summer. The most rewarding attraction is the aurora borealis, seen right from the city. Many marvel at the "midnight sun", and the long sunrises and sunsets. 
+<div class="container"><img src="images/alain-bonnardeaux-7JU77NljbXQ-unsplash (2).jpg" alt="Fairbanks" title="Fairbanks, Alaska" class="image">
+<br>
+<div class="overlay">
+<div class="text">Fairbanks, Alaska <br>
+Fairbanks an Alaskan city known for many tourist attractions, and a sun that rarely sets during the summer. The most rewarding attraction is the aurora borealis, seen right from the city. Many marvel at the "midnight sun", and the long sunrises and sunsets. </div>
+
+</div>
+</div>
 </td>
 
 
 <td class="marmaris"> 
-    <img src="images/valerie-tkach-xnHvdD2m-8w-unsplash.jpg" alt="Marmaris" title="marmaris, Turkey">
-Marmaris, Turkey
-Marmaris is the perfect location for travelers who enjoy a quieter destination, with the sun, ocean, and beautiful forests. Marmaris is known for their untouched forests, and stunning beaches, and great nightlife.
+<div class="container"><img src="images/valerie-tkach-xnHvdD2m-8w-unsplash (1).jpg" alt="Marmaris" title="Marmaris, Turkey" class="image">
+<br>
+<div class="overlay">
+<div class="text">Marmaris, Turkey <br>
+Marmaris is the perfect location for travelers who enjoy a quieter destination, with the sun, ocean, and beautiful forests. Marmaris is known for their untouched forests, and stunning beaches, and great nightlife.</div>
+</div>
+</div>
 </td>
 
 <td>
-    <img src="images/gantas-vaiciulenas-_ih6TS2pESg-unsplash.jpg" alt="Marmaris" title="marmaris, Turkey">
-Vilnius, Lithuania
-While Vilnius isn't technically "unique" per say, I wanted to include Lithuania's capital because of the sheer beauty of this city. Vilnius has much to offer, including castles, beautiful architecture, and rich history. Sometimes called the "Jerusalem of Lithuania", for the amount of jewish influence on the city.
+<div class="container"><img src="images/gantas-vaiciulenas-_ih6TS2pESg-unsplash (1).jpg" alt="Marmaris" title="marmaris, Turkey" class="image">
+<br>
+<div class="overlay">
+    <div class="text">Vilnius, Lithuania <br>
+While Vilnius isn't technically "unique" per say, I wanted to include Lithuania's capital because of the sheer beauty of this city. Vilnius has much to offer, including castles, beautiful architecture, and rich history. Sometimes called the "Jerusalem of Lithuania", for the amount of jewish influence on the city.</div>
+</div>
+</div>
 </td>
 
 </tr>
