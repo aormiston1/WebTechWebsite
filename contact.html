@@ -105,6 +105,18 @@ text-align: left;
     </div>
 </fieldset>
 </div>
+<script>
+    function validateForm (){
+        let x = document.forms["contactform"].value;
+        if (x==""){
+            alert("all boxes must be filled out!");
+            return false;
+        }
+    }
 
+    document.querySelector("button").addEventListener => (){
+        "onclick" validateForm;
+    }
+</script>
 </body>
 </html>

@@ -34,8 +34,50 @@ padding-right: 25%;
 
     Hi, welcome to my website, Unique Travels! My name is Andie, and I've created this page for my WebTech class at Babson College, and I hope you enjoy looking through my website! I have always been very interested in traveling, and have added some photos I've taken from traveling in the past!
 <br><br>
-    <img src="images/unnamed3.jpg" alt="Paris" title="Paris" height="800px">
-    <img src="images/unnamed2.jpg" alt="Barcelona" title="Barcelona" height="800px">
-    <img src="images/unnamed1.jpg" alt="Tokyo" title="Tokyo" height="800px">
+    <img name="paris" height="800px"> 
+    <img name="paris" height="800px">
+    <img name="paris" height="800px">
+    <img name="barcelona" height="800px">
+    <img name="barcelona" height="800px">
+    <img name="barcelona" height="800px">
+    <img name="barcelona" height="800px">
+    <img name="tokyo" height="800px">
+    <img name="tokyo" height="800px">
+    <img name="tokyo" height="800px">
+    <img name="tokyo" height="800px"> 
 </body>
+<script>
+
+let i = 0; 
+let images = [];
+const time = 2000;
+
+images[0] = "unnamed3.jpg";
+images[1] = `paris2.jpg`;
+images[2] = `paris3.jpg`;
+images[3] = "barcelona2.jpg";
+images[4] = "unnamed2.jpg";
+images[5] = "barcelona3.jpg";
+images[6] = "barcelona4.jpg";
+images[7] = 'unnamed1.jpg';
+images[8] = "images/tokyo2.jpg";
+images[9] = "images/tokyo3.jpg";
+images[10] = "images/tokyo4.jpg";
+
+function changeImages(){
+    document.images.src = images[i];
+
+    if (i < images.length - 1){
+        i++;
+    } else {
+        i = 0;
+    }
+
+    setTimeout("changeImages()", time);
+}
+
+window.onload = changeImages;
+
+
+</script>
 </html>
