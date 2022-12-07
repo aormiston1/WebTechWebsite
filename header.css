@@ -36,7 +36,7 @@ align-items: center;
 .home{
     color: black;
     font-weight: 600;
-    font-size: 65px;
+    font-size: 1.5vw;
     text-decoration: none;
     padding: 15px;
     border-radius: 10px;
@@ -52,7 +52,7 @@ align-items: center;
 .discover{
     color: black;
     font-weight: 600;
-    font-size: 65px;
+    font-size: 1.5vw;
     text-decoration: none;
     padding: 15px;
     border-radius: 10px;
@@ -68,7 +68,7 @@ align-items: center;
 .about{
     color: black;
     font-weight: 600;
-    font-size: 65px;
+    font-size: 1.5vw;
     text-decoration: none;
     padding: 15px;
     border-radius: 10px;
@@ -85,7 +85,7 @@ align-items: center;
 .contact{
     color: black;
     font-weight: 600;
-    font-size: 65px;
+    font-size: 1.5vw;
     text-decoration: none;
     padding: 15px;
     border-radius: 10px;
@@ -103,7 +103,7 @@ align-items: center;
 .sitemap{
     color: black;
     font-weight: 600;
-    font-size: 65px;
+    font-size: 1.5vw;
     text-decoration: none;
     padding: 15px;
     border-radius: 10px;
