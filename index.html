@@ -96,39 +96,30 @@
 
     <!-- Photo by <a href="https://unsplash.com/@planett?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Ham</a> on <a href="https://unsplash.com/s/photos/travel-australia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
 <script>
-    // function changeBackgroundColor (){
-    //     const textColors = ["yellow", "blue", "orange"];
-    //     const x = textColors.length;
-    //     const randIndex = Math.floor(Math.random()* x);
-    //     const w = document.getElementById("welcome");
-    //     const f = document.querySelector("h1");
-    //     f.style.backgroundColor = textColors[randIndex];
-    // }
-
-    // document.querySelector("h1").mouseover = changeTextColor;
-
     function changeBackgroundColor() {
-        const bgColors = ["blue", "purple", "brown", "pink"];
+        const bgColors = ["blue", "purple", "brown"];
         const n = bgColors.length;
         const randIndex = Math.floor(Math.random() * n);
         const b = document.getElementById("welcome");
-        const b = document.querySelector("h1");
+        // const b = document.querySelector("h1");
         b.style.backgroundColor = bgColors[randIndex];
       }
+      console.log(changeBackgroundColor);
 
       document.querySelector("h1").onclick = changeBackgroundColor;
+      console.log(changeBackgroundColor)
 
-const box = document.getElementById('h1');
+// const box = document.getElementById('h1');
 
-// 👇️ Change text color on mouseover
-box.addEventListener('mouseover', function change() {
-  box.style.color = 'red';
-});
+// // 👇️ Change text color on mouseover
+// box.addEventListener('mouseover', function change() {
+//   box.style.color = 'red';
+// });
 
-// 👇️ Change text color back on mouseout
-box.addEventListener('mouseout', function handleMouseOut() {
-  box.style.color = 'black';
-});
+// // 👇️ Change text color back on mouseout
+// box.addEventListener('mouseout', function handleMouseOut() {
+//   box.style.color = 'black';
+// });
 </script>
 </body>
 </html>
