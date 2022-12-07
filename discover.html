@@ -71,7 +71,8 @@ Located in the Western part of NZ, Queenstown can be described as a home away fr
 
 
 <td class="verona">
-<img src="images/elisa-amadori-XWLhagkMeB8-unsplash (1).jpg" alt="Verona" title="Verona, Italy" class="image">
+<img id="img1" src="images/elisa-amadori-XWLhagkMeB8-unsplash (1).jpg" alt="Verona" title="Verona, Italy" >
+<img id="img2" src="verona2.jpg" alt="Verona" title="Verona">
 <div class="text">Verona, Italy <br>
 The city of Verona, known for Shakespeare's plays (including Romeo and Juliet and The Two Gentlemen of Verona) is located in north Italy. The 2nd largest city after Venice, Verona is the perfect destination for travels with interests in the history and arts. </div>
 </td>
@@ -154,6 +155,29 @@ While Vilnius isn't technically "unique" per say, I wanted to include Lithuania'
 // <div class="LocationTicker___StyledSTicker-sc-1mlii9f-1 bxyOTB css-4qau10"><span class="LocationTicker___StyledSpan-sc-1mlii9f-2 hFLHgG">Someone from Wellesley Hills logged in <time datetime="1670304360000">3 minutes ago</time> •</span><span class="LocationTicker___StyledSpan2-sc-1mlii9f-3 hObyl">Someone from Wellesley Hills logged in <time datetime="1670304360000">3 minutes ago</time> •</span></div>
 // <span class="LocationTicker___StyledSpan-sc-1mlii9f-2 hFLHgG">Someone from Wellesley Hills logged in <time datetime="1670304360000">a minute ago</time> •</span>
 // idea: display current location of user: https://dev.to/codebubb/how-to-get-a-user-s-location-with-javascript-362o
+
+img1 = document.getElementById("img1");
+img2 = document.getElementById("img2");
+
+img1.onmouseover = function (){
+    img2.style.display = "block";
+}
+
+img1.onmouseout = function (){
+    img2.style.display = "none";
+}
+
+// function changeImage(){
+//     const x= 
+//     if (user == mouseover) {
+//         display
+//     } 
+// }
+
+// document.querySelector("verona").addEventListener("mouseover", function(){
+//     changeImage();
+// })
+
 
 </script>
 </body>

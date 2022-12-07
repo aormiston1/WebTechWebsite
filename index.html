@@ -8,7 +8,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="header.css" >
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
     body{
         margin-left: 0vh;
@@ -17,9 +16,9 @@
         margin-top: 0vh;
     }
     .welcome{
-        font-size:80px;
+        font-size:200px;
         font-family: 'Italiana', serif;
-        font-weight: 800;
+        font-weight: 900;
         text-align: center;
         top:444px;
         position:relative;
@@ -77,9 +76,6 @@
     h2{
         text-align: center;
     }
-    @media (min-width: 1000px;){
-
-    }
 
 </style>
 </head>
@@ -124,23 +120,13 @@ document.querySelector("h1").addEventListener("mouseover", function () {
       }
       console.log(changeBackgroundColor);
 
-      document.querySelector("h1").onclick = changeBackgroundColor;
+    //   document.querySelector("h1").onclick = changeBackgroundColor;
+ 
+      document.querySelector("h1").addEventListener("mouseover", function () {
+        changeBackgroundColor();
+      });
       console.log(changeBackgroundColor)
 
-// const box = document.getElementById('h1');
-
-// // 👇️ Change text color on mouseover
-// box.addEventListener('mouseover', function change() {
-//   box.style.color = 'red';
-// });
-
-// // 👇️ Change text color back on mouseout
-// box.addEventListener('mouseout', function handleMouseOut() {
-//   box.style.color = 'black';
-// });
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </script>
 </body>
