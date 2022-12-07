@@ -67,7 +67,8 @@
     }
     .discover-button:hover{
         color:white;
-        border: 1.5vw solid white;
+        border: 1px solid white;
+        text-decoration: none;
         font-family: 'Italiana', serif;
     }
     h1{
@@ -75,6 +76,9 @@
     }
     h2{
         text-align: center;
+    }
+    @media (min-width: 1000px;){
+
     }
 
 </style>
@@ -98,6 +102,18 @@
 
     <!-- Photo by <a href="https://unsplash.com/@planett?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Ham</a> on <a href="https://unsplash.com/s/photos/travel-australia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
 <script>
+
+function changeText(){
+        const b = document.getElementById("h2");
+        b.style.innerText = "Welcome to your unique travel journey"
+      }
+
+    //   document.querySelector("h1").mouseover= changeText;
+
+document.querySelector("h1").addEventListener("mouseover", function () {
+        changeText();
+      });
+
     function changeBackgroundColor() {
         const bgColors = ["blue", "purple", "brown"];
         const n = bgColors.length;
