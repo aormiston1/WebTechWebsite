@@ -88,14 +88,24 @@
 <body>
     <div class="hero-image" alt="hero-image" title="Uluru, Australia">
         <div class="inner-container">
-         <h1 class="welcome">Welcome to Unique Travels</h1>
+         <h1 id="welcome">Welcome to Unique Travels</h1>
          <h2 class="exampletext">Off The Beaten Path</h2>
          <a class="discover-button" href="discover.html">Discover </a>
     </div>
     </div>
 
-
     <!-- Photo by <a href="https://unsplash.com/@planett?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Ham</a> on <a href="https://unsplash.com/s/photos/travel-australia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+<script>
+    function changeBackgroundColor (){
+        const textColors = ["brown", "darkblue", "orange"];
+        const x = textColors.length;
+        const randIndex = Math.floor(Math.random()* x);
+        const w = document.getElementById("welcome");
+        const f = document.querySelector("h1");
+        w.style.backgroundColor = textColors[randIndex];
+    }
 
+    document.querySelector("h1").mouseover = changeTextColor;
+</script>
 </body>
 </html>

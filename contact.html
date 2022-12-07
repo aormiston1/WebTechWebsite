@@ -21,9 +21,9 @@ fieldset{
 .bigbox{
 
     margin-left: 35%;
-    margin-right: 50%; 
-    /* margin: 50%; */
+    margin-right: 40%; 
     font-size: 70px;
+    width: 30%;
 }
 button{
         text-align: center;
@@ -33,6 +33,7 @@ input{
         text-align: center;
         margin-right: 40%;
         margin-left: 40%;
+        width: 350px;
     }
 .message{
         block-size: 70px;
@@ -40,12 +41,13 @@ input{
 .container{
     display: block;
     position:relative; 
+    width: 95%;
 
     }
 form{
     margin-left: 25%;
     margin-right:25%;
-    width: 65%;
+    
 
 }
 label{
@@ -88,7 +90,7 @@ text-align: left;
     <legend>Contact Me!</legend>
     <div class="container">
 
-    <form class="contactform" 
+    <form name="contactform" 
     action="mailto:aormiston1@babson.edu"
     method="post">
    
@@ -107,16 +109,20 @@ text-align: left;
 </div>
 <script>
     function validateForm (){
-        let x = document.forms["contactform"].value;
-        if (x==""){
+        let x = document.forms['contactform'].value;
+        if (x == ""){
             alert("all boxes must be filled out!");
             return false;
+            console.log("validateForm")
         }
     }
 
-    document.querySelector("button").addEventListener => (){
-        "onclick" validateForm;
-    }
+    document.querySelector("button").addEventListener
+        ("click", function (){
+            validateForm();
+        });
+
+
 </script>
 </body>
 </html>

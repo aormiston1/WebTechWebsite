@@ -53,16 +53,20 @@ let images = [];
 const time = 2000;
 
 images[0] = "unnamed3.jpg";
-images[1] = `paris2.jpg`;
-images[2] = `paris3.jpg`;
+console.log(images[0])
+images[1] = "paris2.jpg";
+console.log(images[1])
+images[2] = "paris3.jpg";
 images[3] = "barcelona2.jpg";
 images[4] = "unnamed2.jpg";
 images[5] = "barcelona3.jpg";
+console.log(images[5])
 images[6] = "barcelona4.jpg";
 images[7] = 'unnamed1.jpg';
-images[8] = "images/tokyo2.jpg";
-images[9] = "images/tokyo3.jpg";
-images[10] = "images/tokyo4.jpg";
+images[8] = "tokyo2.jpg";
+images[9] = "tokyo3.jpg";
+console.log(images[9])
+images[10] = "tokyo4.jpg";
 
 function changeImages(){
     document.images.src = images[i];
@@ -77,7 +81,6 @@ function changeImages(){
 }
 
 window.onload = changeImages;
-
 
 </script>
 </html>
