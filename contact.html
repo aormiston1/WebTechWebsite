@@ -73,6 +73,10 @@ text-align: left;
     padding-left: 5px;
     font-size: 35px;
 }
+h2{
+    text-align: center;
+    font-family: 'Italiana', serif;
+}
 </style>
 <body>
 
@@ -107,6 +111,8 @@ text-align: left;
     </div>
 </fieldset>
 </div>
+
+<div> <h2> A current user's location is: </h2></div>
 <script>
     function validateForm (){
         let x = document.forms['contactform'].value;
@@ -118,11 +124,26 @@ text-align: left;
     }
 
     document.querySelector("button").addEventListener
-        ("click", function (){
+        ("x", function (){
             validateForm();
         });
 
+// get location and display
 
+function getLocation() {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      }
+
+      function showPosition(pos){
+        const crd = pos.coords;
+      
+        h2.style.innerText = `Latitude : ${crd.latitude}`, `Longitude: ${crd.longitude}`, `More or less ${crd.accuracy} meters.`;
+    }
+        const resultDiv = document.getElementById("result");
+
+        document.querySelector("button").onload = function () {
+        getLocation();
+      };
 </script>
 </body>
 </html>
